@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AllAboutApps Project</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link rel="stylesheet" href="public/css/style.css">
+</head>
+<body>
+<div class="wrapper">
+  <div class="container">
+        <h1 class="pageTitle title">Enter Your Details</h1>     
+        <form method="POST" action="send" class="form">
+          <p>
+            <label>Website</label>
+            <input type="text" name="utmSource" class="name" required>
+          </p>
+
+          <p>
+            <label>Email Address</label>
+            <input type="email" name="emailAddress"  class="email" required>
+          </p>
+ 
+          <p class="full">
+            <label>Message</label>
+            <textarea class="message formEntry"  name="message" rows="5"></textarea>
+          </p>
+          <p class="full">
+            <button class="submit formEntry" type="submit">Send Email</button>
+          </p>
+        </form>
+        {{msg}}
+      </div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
